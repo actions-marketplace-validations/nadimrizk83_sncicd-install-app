@@ -44,7 +44,7 @@ describe(`App lib`, () => {
         it(`should return valid URL if all params are defined and correct`, () => {
             const app = new App(props);
             expect(app.buildRequestUrl(options)).toEqual(
-                `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/install?sys_id=${options.sys_id}&version=${options.version}&base_app_version=${options.base_app_version}&auto_upgrade_base_app=${options.auto_upgrade_base_app}`,
+                `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/install?sys_id=${options.sys_id}&version=${options.version}&base_app_version=${options.base_app_version}&auto_upgrade_base_app=${options.auto_upgrade_base_app}`,
             )
         })
 
@@ -54,7 +54,7 @@ describe(`App lib`, () => {
             
             const app = new App(props);
             expect(app.buildRequestUrl(options)).toEqual(
-                `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/install?sys_id=${options.sys_id}&version=${options.version}`,
+                `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/install?sys_id=${options.sys_id}&version=${options.version}`,
             )
         })
         
@@ -79,7 +79,7 @@ describe(`App lib`, () => {
             const app = new App(props)
 
             expect(app.buildRequestUrl(options)).toEqual(
-                `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/install?sys_id=${options.sys_id}&version=${options.version}`,
+                `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/install?sys_id=${options.sys_id}&version=${options.version}`,
             )
         })
 
@@ -89,7 +89,7 @@ describe(`App lib`, () => {
             const app = new App(props)
 
             expect(app.buildRequestUrl(options)).toEqual(
-                `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/install?scope=${options.scope}&version=${options.version}`,
+                `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/install?scope=${options.scope}&version=${options.version}`,
             )
         })
     })
