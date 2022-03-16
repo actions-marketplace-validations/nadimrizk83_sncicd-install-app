@@ -1,4 +1,4 @@
-name: 'ServiceNow CI/CD Install App'
+name: 'ServiceNow CI/CD Install App - Custom Domain Enabled'
 description: 'Installs the specified application from the application repository onto the specified instance.'
 author: "ServiceNow"
 inputs:
